@@ -38,13 +38,14 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.3em 0.6em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  width: fit-content;
 }
 button:hover {
   border-color: #646cff;
@@ -53,6 +54,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -65,4 +67,35 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.comp{
+  background-color: rgba(218, 218, 218, 0.6);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+h2{
+  margin: 10px 0;
+}
+label{
+  margin-left: 10px;
+}
+input{
+  height: 1.4rem;
+  margin-left: 3px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.submit-btn{
+  margin-left: auto;
+}
+.dialog-box{
+  background-color: white;
+  margin:15px 0;
+  padding: 5px 20px;
+  min-height: 65px;
 }

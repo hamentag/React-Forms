@@ -22,23 +22,27 @@ export default function SignUpForm({setToken}) {
         } catch (error) {
           setError(error.message);
         }
+        setUsername("");
+        setPassword("");
     }
 
     return (
-        <>
+        <div className='comp'>
             <h2>Sign Up!</h2>
             {error && <p>{error}</p>}
             <form onSubmit={handleSubmit}>
-                <label>
-                    Username: {" "} <input value={username}
-                        onChange={(ev) => { setUsername(ev.target.value) }} />
-                </label>
-                <label>
-                    Password: {" "} <input value={password}
-                        onChange={(ev) => { setPassword(ev.target.value) }} />
-                </label>
-                <button>Submit</button>
+                <div>
+                    <label>
+                        Username: {" "} <input value={username}
+                            onChange={(ev) => { setUsername(ev.target.value) }} />
+                    </label>
+                    <label>
+                        Password: {" "} <input value={password}
+                            onChange={(ev) => { setPassword(ev.target.value) }} />
+                    </label>
+                </div>
+                <button className='submit-btn'>Submit</button>
             </form>
-        </>
+        </div>
     );
   }
