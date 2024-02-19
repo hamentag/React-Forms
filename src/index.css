@@ -90,6 +90,9 @@ form{
   flex-direction: column;
   gap: 15px;
 }
+form p{
+  margin: 0;
+}
 .submit-btn{
   margin-left: auto;
 }
